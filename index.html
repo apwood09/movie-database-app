@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Database App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Finder</h1>
+        <!-- form: search, calls searchMovies function on submit-->
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search for a movie...">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <br>
+    <br>
+    <main>
+    <div id="movie-results">
+        <div class="movie-card">
+            <!-- Wrapped image to handle hover overlay -->
+            <div class="poster-container">
+                <img src="poster.jpg" alt="Movie Title">
+                <div class="movie-info">
+                    <h3>Movie Title</h3>
+                    <p>Genre / Rating</p>
+                </div>
+            </div>
+        </div>
+        <!-- Movie cards dynamically added here by JavaScript -->
+    </div>
+</main>
+
+    <footer>
+        <p>Data & Images provided by <img src="logo/blue_long_2-9665a76b1ae401a510ec1e0ca40ddcb3b0cfe45f1d51b77a308fea0845885648.svg" alt="themoviedb logo" width="150" length="95"></p>
+    </footer>
+
+    <!-- Link to a JavaScript file for dynamic functionality (script.js) -->
+     <script src="script.js"></script>
+</body>
+</html>
